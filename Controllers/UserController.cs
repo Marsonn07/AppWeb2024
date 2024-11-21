@@ -1,4 +1,4 @@
-﻿// Controllers/UserController.cs
+// Controllers/UserController.cs
 using Microsoft.AspNetCore.Mvc;
 using Org.BouncyCastle.Crypto.Generators;
 using System.Linq;
