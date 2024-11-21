@@ -1,0 +1,63 @@
+﻿@model Aluno
+@{
+    ViewData["Title"] = "Editar Aluno";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Editar Aluno</h2>
+    <form asp-action="Edit" method="post" id="alunoEditForm" novalidate>
+        <input type="hidden" asp-for="Matricula" />
+        <div class="form-group position-relative">
+            <label for="Nome">Nome</label>
+            <input type="text" asp-for="Nome" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Este campo é obrigatório." />
+            <span asp-validation-for="Nome" class="text-danger visually-hidden"></span>
+        </div>
+        <div class="form-group position-relative">
+            <label for="DataNascimento">Data de Nascimento</label>
+            <input type="date" asp-for="DataNascimento" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Este campo é obrigatório." />
+            <span asp-validation-for="DataNascimento" class="text-danger visually-hidden"></span>
+        </div>
+        <div class="form-group position-relative">
+            <label for="NomeResponsavel">Nome do Responsável</label>
+            <input type="text" asp-for="NomeResponsavel" class="form-control" data-bs-toggle="tooltip" data-bs-placement="right" title="Este campo é obrigatório." />
+            <span asp-validation-for="NomeResponsavel" class="text-danger visually-hidden"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Salvar</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Voltar</a>
+    </form>
+</div>
+
+<!-- Script para inicializar o Bootstrap Tooltip -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Inicializa todos os tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // Validação personalizada para mostrar tooltips em campos vazios
+        var form = document.getElementById('alunoEditForm');
+        form.addEventListener('submit', function (event) {
+            var inputs = form.querySelectorAll('input.form-control');
+            var valid = true;
+
+            inputs.forEach(function (input) {
+                if (!input.value.trim()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    input.classList.add('is-invalid'); // Adiciona classe de erro
+                    var tooltip = bootstrap.Tooltip.getInstance(input);
+                    tooltip.show(); // Mostra tooltip
+                    valid = false;
+                } else {
+                    input.classList.remove('is-invalid'); // Remove classe de erro
+                    var tooltip = bootstrap.Tooltip.getInstance(input);
+                    if (tooltip) tooltip.hide(); // Oculta tooltip se já estiver presente
+                }
+            });
+
+            return valid;
+        }, false);
+    });
+</script>

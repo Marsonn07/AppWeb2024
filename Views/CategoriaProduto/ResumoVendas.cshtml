@@ -1,0 +1,27 @@
+﻿@model IEnumerable<dynamic>
+
+<div class="container mt-5">
+    <h2>Resumo de Vendas por Categoria</h2>
+    <form asp-controller="CategoriaProduto" asp-action="GenerateData" method="post">
+        <button type="submit" class="btn btn-primary mb-3">Gerar Dados Automáticos</button>
+    </form>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Categoria</th>
+                <th>Total Quantidade Vendida</th>
+                <th>Total Valor (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Categoria</td>
+                    <td>@item.TotalQuantidade</td>
+                    <td>R$ @item.TotalValor.ToString("F2")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

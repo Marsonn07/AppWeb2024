@@ -1,0 +1,36 @@
+﻿@model Funcionario
+@{
+    ViewData["Title"] = "Detalhes do Funcionário";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Detalhes do Funcionário</h2>
+    <div class="card mt-4 shadow">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Informações do Funcionário</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Id</dt>
+                <dd class="col-sm-9">@Model.Id</dd>
+
+                <dt class="col-sm-3">Nome</dt>
+                <dd class="col-sm-9">@Model.Nome</dd>
+
+                <dt class="col-sm-3">Endereço</dt>
+                <dd class="col-sm-9">@Model.Endereco</dd>
+
+                <dt class="col-sm-3">Celular</dt>
+                <dd class="col-sm-9">@Model.Celular</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-center">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                <i class="bi bi-pencil-square"></i> Editar
+            </a>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left-circle"></i> Voltar
+            </a>
+        </div>
+    </div>
+</div>

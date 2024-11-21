@@ -1,0 +1,45 @@
+﻿@model IEnumerable<dynamic>
+
+<div class="container mt-4">
+    <h2 class="text-center">Totalização de Matrículas por Aluno e Projeto</h2>
+
+    <!-- Tabela de Totalização -->
+    <div class="table-responsive">
+        <table class="table table-hover table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Matrícula do Aluno</th>
+                    <th scope="col">Nome do Aluno</th>
+                    <th scope="col">Descrição do Projeto</th>
+                    <th scope="col">Total de Matrículas</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="4" class="text-center">Nenhuma matrícula encontrada.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.AlunoMatricula</td>
+                            <td>@item.AlunoNome</td>
+                            <td>@item.ProjetoDescricao</td>
+                            <td>@item.TotalMatriculas</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="bi bi-arrow-left-circle"></i> Voltar
+        </a>
+    </div>
+</div>

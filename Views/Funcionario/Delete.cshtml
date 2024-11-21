@@ -1,0 +1,36 @@
+﻿@model Funcionario
+@{
+    ViewData["Title"] = "Deletar Funcionário";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-danger">Deletar Funcionário</h2>
+    <div class="card mt-4 shadow">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0">Confirmar Exclusão</h4>
+        </div>
+        <div class="card-body">
+            <h5>Tem certeza que deseja deletar este funcionário?</h5>
+            <dl class="row">
+                <dt class="col-sm-3">Id</dt>
+                <dd class="col-sm-9">@Model.Id</dd>
+
+                <dt class="col-sm-3">Nome</dt>
+                <dd class="col-sm-9">@Model.Nome</dd>
+
+                <dt class="col-sm-3">Endereço</dt>
+                <dd class="col-sm-9">@Model.Endereco</dd>
+
+                <dt class="col-sm-3">Celular</dt>
+                <dd class="col-sm-9">@Model.Celular</dd>
+            </dl>
+        </div>
+        <div class="card-footer text-center">
+            <form asp-action="Delete">
+                <input type="hidden" asp-for="Id" />
+                <button type="submit" class="btn btn-danger">Deletar</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </form>
+        </div>
+    </div>
+</div>

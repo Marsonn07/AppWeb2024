@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Gerar Dados Aleatórios";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Gerar Dados Aleatórios</h2>
+    <form asp-action="GenerateRandomData" method="post">
+        <div class="form-group">
+            <label for="quantidade">Quantidade de Registros</label>
+            <input type="number" id="quantidade" name="quantidade" class="form-control" placeholder="Digite a quantidade de registros a serem gerados" min="1" />
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Gerar</button>
+        <a asp-action="Index" class="btn btn-secondary mt-3">Voltar</a>
+    </form>
+</div>

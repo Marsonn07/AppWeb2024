@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Nova Movimentação de Estoque";
+    // Certifique-se de que você está passando uma lista de produtos via ViewData ou ViewBag.
+    var produtos = ViewData["Produtos"] as List<Produto>;
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>Nova Movimentação</h2>
+            <p class="text-muted">Preencha as informações abaixo para registrar uma nova movimentação de estoque.</p>
+
+            @if (produtos == null || !produtos.Any())
+            {
+                <div class="alert alert-warning mt-4">
+                    Nenhum produto disponível para movimentação. Por favor, adicione produtos antes de registrar uma movimentação.
+                </div>
+            }
+            else
+            {
+                <form asp-action="NovaMovimentacao" method="post">
+                    <div class="form-group mb-3">
+                        <label for="produtoId" class="form-label">Produto</label>
+                        <select id="produtoId" name="produtoId" class="form-select" required>
+                            <option value="" selected disabled>Selecione um produto</option>
+                            @foreach (var produto in produtos)
+                            {
+                                <option value="@produto.Id">@produto.Nome</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="quantidade" class="form-label">Quantidade</label>
+                        <input type="number" id="quantidade" name="quantidade" class="form-control" min="1" required />
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label class="form-label">Tipo de Movimentação</label><br />
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="entrada" name="tipo" value="Entrada" class="form-check-input" required />
+                            <label for="entrada" class="form-check-label">Entrada (Reabastecimento)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="saida" name="tipo" value="Saida" class="form-check-input" required />
+                            <label for="saida" class="form-check-label">Saída (Venda)</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 mt-3">Registrar Movimentação</button>
+                </form>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Matricula>
+@{
+    ViewData["Title"] = "Lista de Matrículas";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Lista de Matrículas</h2>
+
+    <!-- Formulário de Filtro -->
+    <form method="get" class="mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <label for="alunoMatricula" class="form-label">Filtrar por Aluno Matricula:</label>
+                <input type="number" name="alunoMatricula" id="alunoMatricula" class="form-control" placeholder="Digite a matricula do aluno" />
+            </div>
+            <div class="col-md-3">
+                <label for="projetoId" class="form-label">Filtrar por Projeto ID:</label>
+                <input type="number" name="projetoId" id="projetoId" class="form-control" placeholder="Digite o ID do projeto" />
+            </div>
+            <div class="col-md-3 mt-4">
+                <button type="submit" class="btn btn-primary mt-1">Filtrar</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Tabela de Matrículas -->
+    <div class="table-responsive">
+        <table class="table table-hover table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID da Matrícula</th>
+                    <th scope="col">ID do Aluno</th>
+                    <th scope="col">ID do Projeto</th>
+                    <th scope="col">Data da Matrícula</th>
+                    <th scope="col" class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">Nenhuma matrícula encontrada.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.MatriculaId</td>
+                            <td>@item.AlunoMatricula</td>
+                            <td>@item.ProjetoId</td>
+                            <td>@item.DataMatricula.ToString("dd/MM/yyyy")</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.MatriculaId" class="btn btn-sm btn-warning mx-1">
+                                    <i class="bi bi-pencil-square"></i> Editar
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.MatriculaId" class="btn btn-sm btn-info mx-1">
+                                    <i class="bi bi-info-circle"></i> Detalhes
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.MatriculaId" class="btn btn-sm btn-danger mx-1">
+                                    <i class="bi bi-trash"></i> Deletar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Criar Nova Matrícula
+        </a>
+        <a asp-action="GenerateRandomData" class="btn btn-info ml-2">
+            <i class="bi bi-plus-circle"></i> Gerar Dados Aleatórios
+        </a>
+        <a asp-action="TotalizarDados" class="btn btn-secondary ml-2">
+            <i class="bi bi-bar-chart"></i> Ver Totalizações
+        </a>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+﻿@model Produto
+
+@{
+    ViewData["Title"] = "Gerar Produto";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center">Gerar Novo Produto</h2>
+
+            @if (Model != null)
+            {
+                <div class="card mt-4 shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Produto Gerado</h4>
+                        <p><strong>Nome:</strong> @Model.Nome</p>
+                        <p><strong>Preço:</strong> R$ @Model.Preco.ToString("F2")</p>
+                        <p><strong>Quantidade em Estoque:</strong> @Model.QuantidadeEmEstoque</p>
+                        <p><strong>Descrição:</strong> @Model.Descricao</p>
+
+                        <form asp-action="SaveGenerated" method="post">
+                            <!-- Alterei para SaveGenerated -->
+                            <input type="hidden" asp-for="Nome" />
+                            <input type="hidden" asp-for="Preco" />
+                            <input type="hidden" asp-for="QuantidadeEmEstoque" />
+                            <input type="hidden" asp-for="Descricao" />
+
+                            <button type="submit" class="btn btn-primary w-100 mt-3">Confirmar Cadastro</button>
+                        </form>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning mt-4">
+                    Nenhum produto foi gerado. Por favor, tente novamente.
+                </div>
+            }
+        </div>
+    </div>
+</div>

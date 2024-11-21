@@ -1,0 +1,37 @@
+﻿@model IEnumerable<dynamic>
+
+<div class="container mt-5">
+    <h2>Pivot de Vendas por Categoria e Ano</h2>
+    <form asp-controller="CategoriaProduto" asp-action="GenerateData" method="post">
+        <button type="submit" class="btn btn-primary mb-3">Gerar Dados Automáticos</button>
+    </form>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Categoria</th>
+                <th>Ano</th>
+                <th>Total Vendas (R$)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Categoria</td>
+                    <td>
+                        @foreach (var ano in item.VendasPorAno.Keys)
+                        {
+                            <div>@ano</div>
+                        }
+                    </td>
+                    <td>
+                        @foreach (var total in item.VendasPorAno.Values)
+                        {
+                            <div>R$ @total.ToString("F2")</div>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

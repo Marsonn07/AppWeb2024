@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Aluno>
+@{
+    ViewData["Title"] = "Lista de Alunos";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Lista de Alunos</h2>
+
+    <!-- Filtro de Matricula -->
+    <form method="get" class="mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <label for="filterId" class="form-label">Filtrar por Matricula:</label>
+                <div class="input-group">
+                    <input type="number" name="filterId" id="filterId" class="form-control" placeholder="Digite a matricula para filtrar" />
+                    <button type="submit" class="btn btn-primary">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Tabela de Alunos -->
+    <div class="table-responsive">
+        <table class="table table-hover table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Matricula</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Data de Nascimento</th>
+                    <th scope="col">Nome do Responsável</th>
+                    <th scope="col" class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr>
+                        <td colspan="5" class="text-center">Nenhum aluno encontrado.</td>
+                    </tr>
+                }
+                else
+                {
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Matricula</td>
+                            <td>@item.Nome</td>
+                            <td>@item.DataNascimento.ToShortDateString()</td>
+                            <td>@item.NomeResponsavel</td>
+                            <td class="text-center">
+                                <a asp-action="Edit" asp-route-id="@item.Matricula" class="btn btn-sm btn-warning mx-1">
+                                    <i class="bi bi-pencil-square"></i> Editar
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.Matricula" class="btn btn-sm btn-info mx-1">
+                                    <i class="bi bi-info-circle"></i> Detalhes
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Matricula" class="btn btn-sm btn-danger mx-1">
+                                    <i class="bi bi-trash"></i> Deletar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-4">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Criar Novo Aluno
+        </a>
+        <a asp-action="GenerateRandomData" class="btn btn-info ml-2">
+            <i class="bi bi-plus-circle"></i> Gerar Dados Aleatórios
+        </a>
+    </div>
+</div>
