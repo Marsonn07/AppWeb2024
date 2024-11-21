@@ -1,4 +1,4 @@
-﻿// Controllers/ProjetoController.cs
+// Controllers/ProjetoController.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
