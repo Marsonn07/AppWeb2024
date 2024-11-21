@@ -1,4 +1,4 @@
-﻿// Controllers/AlunoController.cs
+// Controllers/AlunoController.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
