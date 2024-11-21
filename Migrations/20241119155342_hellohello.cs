@@ -16,7 +16,7 @@ namespace AppWeb2024.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-
+        
         }
     }
 }
