@@ -1,0 +1,169 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AppWeb2024
+build_property.RootNamespace = AppWeb2024
+build_property.ProjectDir = C:\Users\fireb\Documents\Ciências da Computação\3bcc\Nova pasta\AppWeb2024\AppWeb2024\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\fireb\Documents\Ciências da Computação\3bcc\Nova pasta\AppWeb2024\AppWeb2024
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Aluno/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Aluno/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Aluno/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Aluno/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Aluno/GenerateRandomData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cR2VuZXJhdGVSYW5kb21EYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Aluno/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/CategoriaProduto/PivotVendasPorAno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhUHJvZHV0b1xQaXZvdFZlbmRhc1BvckFuby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/CategoriaProduto/ResumoVendas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhUHJvZHV0b1xSZXN1bW9WZW5kYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Funcionario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Funcionario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Funcionario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Funcionario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Funcionario/GenerateRandomData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cR2VuZXJhdGVSYW5kb21EYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Funcionario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnVuY2lvbmFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/GenerateRandomData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEdlbmVyYXRlUmFuZG9tRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Matricula/TotalizarDados.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXFRvdGFsaXphckRhZG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Movimentacao/NovaMovimentacao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY2FvXE5vdmFNb3ZpbWVudGFjYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Produto/Generate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xHZW5lcmF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Projeto/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0b1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Projeto/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0b1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Projeto/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0b1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Projeto/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0b1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Projeto/GenerateRandomData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0b1xHZW5lcmF0ZVJhbmRvbURhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Projeto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fireb/Documents/Ciências da Computação/3bcc/Nova pasta/AppWeb2024/AppWeb2024/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-iuhy9uqzjy
