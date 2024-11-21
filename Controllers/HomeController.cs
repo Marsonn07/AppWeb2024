@@ -1,4 +1,4 @@
-﻿using AppWeb2024.Models;
+using AppWeb2024.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
