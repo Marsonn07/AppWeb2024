@@ -1,4 +1,4 @@
-﻿// Controllers/FuncionarioController.cs
+// Controllers/FuncionarioController.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
