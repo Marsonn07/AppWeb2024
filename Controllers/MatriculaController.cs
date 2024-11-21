@@ -1,4 +1,4 @@
-﻿// Controllers/MatriculaController.cs
+// Controllers/MatriculaController.cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
