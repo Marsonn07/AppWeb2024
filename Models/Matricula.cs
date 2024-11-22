@@ -19,3 +19,5 @@ public class Matricula
     [DataType(DataType.Date, ErrorMessage = "O campo Data da Matrícula deve ser uma data válida.")]
     public DateTime DataMatricula { get; set; }
 }
+
+
