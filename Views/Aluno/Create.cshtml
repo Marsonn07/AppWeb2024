@@ -35,28 +35,5 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
 
-        // Validação personalizada para mostrar tooltips em campos vazios
-        var form = document.getElementById('alunoCreateForm');
-        form.addEventListener('submit', function (event) {
-            var inputs = form.querySelectorAll('input.form-control');
-            var valid = true;
-
-            inputs.forEach(function (input) {
-                if (!input.value.trim()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    input.classList.add('is-invalid'); // Adiciona classe de erro
-                    var tooltip = bootstrap.Tooltip.getInstance(input);
-                    tooltip.show(); // Mostra tooltip
-                    valid = false;
-                } else {
-                    input.classList.remove('is-invalid'); // Remove classe de erro
-                    var tooltip = bootstrap.Tooltip.getInstance(input);
-                    if (tooltip) tooltip.hide(); // Oculta tooltip se já estiver presente
-                }
-            });
-
-            return valid;
-        }, false);
-    });
+      
 </script>
