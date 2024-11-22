@@ -18,3 +18,4 @@ public class Aluno
     [StringLength(100, ErrorMessage = "O Nome do Responsável não pode exceder 100 caracteres.")]
     public string NomeResponsavel { get; set; }
 }
+
