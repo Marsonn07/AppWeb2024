@@ -18,3 +18,5 @@ public class LogMovimentacao
     [Required]
     public string Acao { get; set; } // Descrição da ação realizada, ex: "Compra realizada" ou "Reabastecimento"
 }
+
+
