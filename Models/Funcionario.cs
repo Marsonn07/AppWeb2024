@@ -11,3 +11,5 @@ public class Funcionario
     [Required(ErrorMessage = "O campo Celular é obrigatório.")]
     public string? Celular { get; set; }
 }
+
+
