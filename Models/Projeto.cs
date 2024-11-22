@@ -10,3 +10,5 @@ public class Projeto
     [StringLength(200, ErrorMessage = "O campo Descrição não pode exceder 200 caracteres.")]
     public string Descricao { get; set; }
 }
+
+
