@@ -12,7 +12,7 @@ public class UserController : Controller
     {
         _context = context;
     }
-
+    
     // GET: /User/Register
     [HttpGet]
     public IActionResult Register()
