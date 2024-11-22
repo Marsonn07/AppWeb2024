@@ -7,3 +7,4 @@ namespace AppWeb2024.Models
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
 }
+
