@@ -16,3 +16,4 @@ public class Vendas
     public decimal ValorTotal { get; set; }
     public DateTime DataVenda { get; set; } = DateTime.Now;
 }
+
