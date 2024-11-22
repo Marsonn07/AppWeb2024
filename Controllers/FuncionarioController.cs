@@ -15,7 +15,7 @@ public class FuncionarioController : Controller
     {
         _context = context;
     }
-
+    
     // Método para verificar se o usuário está logado em cada requisição
     public override void OnActionExecuting(ActionExecutingContext context)
     {
