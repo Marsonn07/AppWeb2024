@@ -8,3 +8,5 @@ public class CategoriaProduto
     [Required]
     public string Nome { get; set; }
 }
+
+
