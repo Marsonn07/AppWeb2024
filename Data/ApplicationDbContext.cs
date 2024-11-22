@@ -6,7 +6,7 @@ public class ApplicationDbContext : DbContext
         : base(options)
     {
     }
-
+    
     public DbSet<User> Users { get; set; } 
     public DbSet<Aluno> Alunos { get; set; }
     public DbSet<Matricula> Matriculas { get; set; }
